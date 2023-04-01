@@ -1,0 +1,19 @@
+.ingredient{
+  text-align:center;
+}
+
+.ingredient img{
+  width: 50%;
+  margin: 5px;
+}
+
+
+.burger p{
+  text-align:center;
+  font-size:1.5rem;
+  color: red;
+}
+
+.paymentMethod option{
+  font-size:1.4rem
+}

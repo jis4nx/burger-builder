@@ -1,3 +1,51 @@
+<<<<<<< HEAD
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size:62.5%
+}
+
+
+.navigation{
+  background-color: #C41E3A ;
+  display:flex;
+  flex-wrap:wrap;
+  margin-bottom:20px;
+}
+
+.navlink{
+  color: #fff;
+  font-size:2rem;
+  position:relative;
+}
+
+.navlink::after{
+  content:'';
+  width :0;
+  background-color: royalblue;
+  height: 3px;
+  bottom: 0;
+  left: 1px;
+  position: absolute;
+  transition: 0.3s;
+}
+
+.navlink:hover{
+  color: #fff5ee;
+  cursor: pointer;
+}
+
+.navlink:hover::after{
+  width: 100%;
+}
+
+
+.brand{
+  height: 60px;
+  width : 60px;
+=======
 .App {
   text-align: center;
 }
@@ -35,4 +83,5 @@
   to {
     transform: rotate(360deg);
   }
+>>>>>>> fcb7258 (Initialize project using Create React App)
 }
