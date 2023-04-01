@@ -21,12 +21,13 @@ const burgerBuildSlice = createSlice({
     },
     removeIngredient: (state, action) => {
       let rev = state.ingredients.reverse();
-      let IndexofIngredient = rev.findIndex(
+      let IndexofIngredient = state.ingredients.findIndex(
         (item) => item.type === action.payload
       );
       if (IndexofIngredient !== -1) {
-        state.ingredients.splice(IndexofIngredient, 1);
+        rev.splice(IndexofIngredient, 1);
         state.totalPrice -= INGREDIENT_PRICES[action.payload];
+        state.ingredients = rev.reverse()
       } else {
         state.ingredients = rev.reverse();
       }
